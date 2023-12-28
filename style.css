@@ -303,7 +303,7 @@ nav img {
 
 @media (width < 1650px) {
     .container {
-        max-width: 1300px
+        max-width: 1300px;
     }
 
     section {
