@@ -177,7 +177,6 @@ const handleDropAdd = (event) => {
 
         reader.onload = function (e) {
             addNewImage = e.target.result;
-            console.log(addNewImage)
         }
 
         reader.readAsDataURL(image);
