@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="crud.js" defer></script>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+    <div id="crud-container">
+        <div id="crud-btns">
+            <button id="edit" class="button blue active-blue">EDIT</button>
+            <button id="delete" class="button red">DELETE</button>
+            <button id="add" class="button green">ADD</button>
+        </div>
+
+        <div id="crud-edit" >
+            <div id="inputs">
+                <div>
+                    <input type="text" id="edit-categories" list="categories" placeholder="Category">
+                    <input type="text" id="edit-items" list="items" placeholder="Item">
+                </div>
+                <div>
+                    <input type="text" id="edit-name" placeholder="New Item Name">
+                    <input type="number" id="edit-price" placeholder="New Item Price">
+                </div>
+            </div>
+            <datalist id="categories">
+                <option value="sellers"></option>
+                <option value="desktops"></option>
+                <option value="monitors"></option>
+                <option value="chairs"></option>
+                <option value="mice"></option>
+                <option value="headphones"></option>
+            </datalist>
+            <datalist id="items">
+            </datalist>
+            <div id="edit-drop-area" class="drop-area" ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
+                <p>Drag and drop a photo here.</p>
+            </div>
+            <button id="save" class="button blue">SAVE</button>
+        </div>
+
+        <div id="crud-delete" class="hidden">
+            <div>
+                <input type="text" id="delete-categories" list="categories" placeholder="Category">
+                <input type="text" id="delete-items" list="items" placeholder="Item">
+            </div>
+            <button id="delete-item" class="button red">DELETE</button>
+        </div>
+
+        <div id="crud-add" class="hidden">
+            <input type="text" id="add-categories" list="categories" placeholder="Category">
+            <div>
+                <input type="text" id="add-name" placeholder="New Item Name">
+                <input type="number" id="add-price" placeholder="New Item Price">
+            </div>
+            <div id="add-drop-area" class="drop-area" ondragover="handleDragOver(event)" ondrop="handleDropAdd(event)">
+                <p>Drag and drop a photo here.</p>
+            </div>
+            <button id="add-item" class="button green">SAVE</button>
+        </div>
+    </div>
+</body>
+</html>

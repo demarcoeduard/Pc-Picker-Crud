@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/357c06fe96.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="home" class="container">
+        <nav>
+            <img src="logo.png" alt="logo">
+            <div id="nav-el">
+                <a href="#desktops">DESKTOPS</a>
+                <a href="#monitors">MONITORS</a>
+                <a href="#chairs">CHAIRS</a>
+                <a href="#mice">MICE</a>
+                <a href="#headphones">HEADPHONES</a>
+                <a id="logbtn">LOG IN/SIGN IN</a>
+            </div>
+        </nav>
+        <div id="hero">
+            <div id="hero-text">
+                <h1>Make Your</h1>
+                <h1>Dream Setup</h1>
+                <br>
+                <p>Explore our shop and find all the missing piecies to complete your dream setup.</p>
+                <br>
+                <p>Press the button bellow to start your journey!</p>
+                <br><br>
+                <button><a href="#bestsellers">Explore Products</a></button>
+            </div>
+            <img src="heroimg.png" alt="hero-image">
+        </div>
+    </header>
+    <main class="container">
+        <section id="bestsellers" >
+            <h1>BEST SELLERS</h1>
+            <div id="bestsellers-cards">
+
+            </div>
+        </section>
+        <section id="desktops">
+            <h1 class="sections-h1">DESKTOPS</h1>
+            <div class="container-cards">
+                <i id="desktops-left" class="fa-solid fa-chevron-left"></i>
+                <div id="desktops-cards" class="cards-align">
+        
+                </div>
+                <i id="desktops-right" class="fa-solid fa-chevron-right"></i>
+            </div>
+        </section>
+        <section id="monitors">
+            <h1 class="sections-h1">MONITORS</h1>
+            <div class="container-cards">
+                <i id="monitors-left" class="fa-solid fa-chevron-left"></i>
+                <div id="monitors-cards" class="cards-align">
+        
+                </div>
+                <i id="monitors-right" class="fa-solid fa-chevron-right"></i>
+            </div>
+        </section>
+        <section id="chairs">
+            <h1 class="sections-h1">CHAIRS</h1>
+            <div class="container-cards">
+                <i id="chairs-left" class="fa-solid fa-chevron-left"></i>
+                <div id="chairs-cards" class="cards-align">
+        
+                </div>
+                <i id="chairs-right" class="fa-solid fa-chevron-right"></i>
+            </div>
+        </section>
+        <section id="mice">
+            <h1 class="sections-h1">MICE</h1>
+            <div class="container-cards">
+                <i id="mice-left" class="fa-solid fa-chevron-left"></i>
+                <div id="mice-cards" class="cards-align">
+        
+                </div>
+                <i id="mice-right" class="fa-solid fa-chevron-right"></i>
+            </div>
+        </section>
+        <section id="headphones">
+            <h1 class="sections-h1">HEADPHONES</h1>
+            <div class="container-cards">
+                <i id="headphones-left" class="fa-solid fa-chevron-left"></i>
+                <div id="headphones-cards" class="cards-align">
+        
+                </div>
+                <i id="headphones-right" class="fa-solid fa-chevron-right"></i>
+            </div>
+        </section>
+    </main>
+    <div id="logcontainer">
+        <div id="login-signin" class="hidden">
+            <i id="exitbtn" class="fa-solid fa-xmark"></i>
+            <div id="buttons">
+                <button id="loginbtn">Log In</button>
+                <button id="signinbtn">Sign In</button>
+            </div>
+            <div id="login">
+                <form>
+                    <input type="text" id="username-login" placeholder="Username" required>
+                    <input type="password" id="password-login" placeholder="Password" required>
+                    <button type="button" id="login-register" class="loginsigninbtn">Log In</button>
+                </form>
+            </div>
+            <div id="signin" class="hidden">
+                <form>
+                    <input type="text" id="username-signin" placeholder="Username" required>
+                    <input type="password" id="password-signin" placeholder="Password" required>
+                    <button type="button" id="signin-register" class="loginsigninbtn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
